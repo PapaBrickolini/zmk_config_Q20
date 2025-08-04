@@ -14,7 +14,6 @@
 
    
 #define SYM 1
-#define UPPER 2
 
 
 
@@ -51,7 +50,7 @@
 //        |         aA     |         0           |           SPACE              |         SYM         |        aA          |       
 //        -----------------------------------------------------------------------------------------------------------------
 
-                 &mkp LCLK                                                                                          &mkp RCLK
+                 &bootloader                                                                                        &bootloader
     &bl BL_DEC              &kp LGUI                            &mkp LCLK                          &mt ESC K_BACK                    &bl BL_INC
     &kp Q        &kp W      &kp E       &kp R     &kp T         &kp Y             &kp U            &kp I            &kp O            &kp P
     &kp A        &kp S      &kp D       &kp F     &kp G         &kp H             &kp J            &kp K            &kp L            &kp BSPC
@@ -64,7 +63,7 @@
         sym_layer {
 
             bindings = <        
-                 &kp C_VOL_UP                                                                                       &kp C_VOL_DN
+                 &bootloader                                                                                        &bootloader
     &bl BL_DEC              &kp C_AC_SEARCH                     &mkp LCLK                          &kp F5                            &bl BL_INC 
     &kp HASH     &kp N1     &kp N2      &kp N3    &mt LBKT LPAR &mt RBKT RPAR     &kp UNDER        &kp MINUS        &kp PLUS         &kp AT
     &kp STAR     &kp N4     &kp N5      &kp N6    &kp SLASH     &kp COLON         &kp SEMI         &kp APOS         &kp DQT          &kp DEL
