@@ -23,6 +23,19 @@
 
 
 / {
+
+	macros {
+        emojimenu: emojimenu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp PERIOD>
+                , <&macro_release &kp LALT>
+                ;
+        };
+    };
+
     behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
@@ -40,18 +53,6 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&emojimenu>;
             display-name = "Layer-Tap";
-        };
-    };
-	
-	macros {
-        emojimenu: emojimenu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp PERIOD>
-                , <&macro_release &kp LALT>
-                ;
         };
     };
 
