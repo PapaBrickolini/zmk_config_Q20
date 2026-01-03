@@ -37,11 +37,12 @@
     };
 
     behaviors {
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&mkp LCLK>, <&bt BT_CLR>;
+        btclearall: bt_clear_all {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <5000>;
+            bindings = <&bt BT_CLR_ALL>, <&none>;
         };
     };
 	
