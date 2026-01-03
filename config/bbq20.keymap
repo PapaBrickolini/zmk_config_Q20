@@ -42,7 +42,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <5000>;
-            bindings = <&none &bt BT_CLR_ALL>;
+            bindings = <&none &bt BT_CLR>;
         };
     };
 	
