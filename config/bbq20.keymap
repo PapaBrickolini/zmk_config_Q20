@@ -31,18 +31,6 @@
             bindings = <&mkp LCLK>, <&bt BT_CLR>;
         };
     };
-	
-	macros {
-        emojimenu: emojimenu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp .>
-                , <&macro_release &kp LALT>
-                ;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
