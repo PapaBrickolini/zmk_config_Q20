@@ -46,7 +46,6 @@
         };
     };
 
-	
     behaviors {
         customlt: custom_layer_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -73,7 +72,7 @@
 //        -----------------------------------------------------------------------------------------------------------------
 
                  &bootloader                                                                                        &bootloader
-    &bl BL_DEC              &btclearall 1 NONE                  &mkp LCLK                          &btclearall 1 NONE                &bl BL_INC
+    &bl BL_DEC              &btclearall NONE BT_CLR_ALL         &mkp LCLK                          &btclearall NONE BT_CLR_ALL       &bl BL_INC
     &kp Q        &kp W      &kp E       &kp R     &kp T         &kp Y             &kp U            &kp I            &kp O            &kp P
     &kp A        &kp S      &kp D       &kp F     &kp G         &kp H             &kp J            &kp K            &kp L            &kp BSPC
     &kp LCTRL    &kp Z      &kp X       &kp C     &kp V         &kp B             &kp N            &kp M            &kp SEMI         &kp ENTER
